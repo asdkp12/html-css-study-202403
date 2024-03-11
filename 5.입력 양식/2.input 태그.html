@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+     input{
+      /* height: 100px; */
+      display: inline-block;
+    }
+    /* button{
+      width: 60px;
+      display: inline-block;
+    } */ 
+  </style>
+</head>
+<body>
+  
+  <form action="https://www.naver.com">
+    <input type="text" value="아무리 새로고침 해봐라" placeholder="야무지게 써봐라">
+    <br><input type="text">
+  <br><input type="password">
+  <br><input type="email">
+  <br><input type="checkbox" name="gd">게임
+  <input type="checkbox" name="gd" disabled>헤응
+  <input type="checkbox" name="gd" checked>수영
+  <!-- name태그를 꼭 활용해주자 체크박스는. -->
+  <br>
+  <input type="radio" name="qt"> 예
+  <input type="radio" name="qt"> 아니요
+  <!-- name태그를 활용해줘야 하나가 체크 됐을때 다른 하나가 풀린다 -->
+  <br>
+  <input type="number" value="1000" min="1000" max="10000">
+  <br>
+  <input type="range" value="7" min="0" max="999">
+  <br>
+  <input type="file" multiple accept="image/*"> 
+  <!-- 파일내놔 여러개 내놔 이미지로 내놔 -->
+  <br>
+  <input type="hidden" name="nick" value="똥멍청이">
+  <!-- 사용자 몰래 서버로 보낼 때, 백데이터로 보낼때. 걍 사용자한테 안보여준다 -->
+
+  <br>
+  <button type="button">button</button>
+  <!-- 깡통버튼 즉 내가 직접 커스텀 가능하다. -->
+  <button type="submit">submit</button>
+  <!-- 액션 URL로 이동 서버에 제출하는거임. -->
+  <button type="reset">reset</button>
+  <!-- 초기화 -->
+  <input type="button" value="버튼">
+  <!-- 인풋태그로도 버튼을 만들 순 있지만 버튼태그를 사용하라
+  1. 직관성
+  2. 닫는태그의 여부 (자식태그,부모태그를 생각하자)-->
+  </form>
+
+  
+
+
+  
+
+</body>
+</html>
