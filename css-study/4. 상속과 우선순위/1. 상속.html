@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    .eco {
+      width: 400px;
+      height: 450px;
+      border: 3px solid red;
+      /* 아래는 글자 관련 속성들로 eco에만 적용했다해고 
+      다른 곳 모두 (자식에게도) 적용된다 */
+      color: blue;
+      font-size: 1.5em;
+      letter-spacing: 5px;
+    }
+    .animal {
+      width: 200px;
+      height: 200px;
+      border: 3px solid orange;
+      /* 자식이 없을경우에는 이렇게 자기 자신만 바꾼다. */
+      color: tomato;
+    }
+    .plant {
+      width: 200px;
+      height: 200px;
+      border: 3px solid greenyellow;
+      /* 자식요소들은 모두 바뀐다. */
+      color: skyblue;
+    }
+    .plant > div:nth-child(2) {
+      font-weight: 700;
+      color: red;
+    }
+
+    body {
+      font-size: 18px;
+      font-family: sans-serif;
+      color: darkgray;
+    }
+    /* 위처럼 폰트 기본설정을 깔아두고 필요한 곳 만 따로 찾아서 작업하면 된다.
+    이러한 편의를 위해 상속이라는 개념이 존재하고, 글자관련 텍스트만 적용 된다. */
+  </style>
+</head>
+<body>
+  <!-- .eco>.animal+(.plant>div*3) -->
+  <div class="eco">생태계
+    <div class="animal">동물</div>
+    <div class="plant">식물
+      <div>소나무</div>
+      <div>튤립</div>
+      <div>해바라기</div>
+    </div>
+  </div>
+</body>
+</html>
