@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-size: 18px;
+    }
+    div {
+      border: 2px solid gray;
+    }
+    .root {
+      /* width: 40em; */
+      font-size: 20px;
+      width: 50rem;
+    }
+    /* 10px * 40 = 400px */
+
+    /* em은 자기 자신의 폰트 사이즈에 비례한다.
+    글자와 문단 박스가 같이 커져야하기 때문에 이런 기능이 등장했다.
+    실무적인 측면에선 rem을 더 선호한다 */
+
+    /* rem 단위는 html 폰트 사이즈 비례한다. */
+    
+    .parent {
+      width: 50%;
+      margin-left: 10%;
+    }
+    .child {
+      width: 50%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="root">ROOT
+    <div class="parent">PARENT
+      <div class="child">CHILD1</div>
+      <div class="child">CHILD2</div>
+    </div>
+  </div>
+  
+</body>
+</html>
